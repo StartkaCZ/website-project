@@ -1,0 +1,20 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/about": [
+		"src/routes/+layout.js"
+	],
+	"/catalogue": [
+		"src/routes/+layout.js"
+	],
+	"/catalogue/[id]": [
+		"src/routes/catalogue/[id]/+page.js",
+		"src/routes/catalogue/[id]/+page.server.js",
+		"src/routes/+layout.js"
+	],
+	"/contact": [
+		"src/routes/+layout.js"
+	]
+}
