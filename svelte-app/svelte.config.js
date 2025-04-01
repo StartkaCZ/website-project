@@ -9,10 +9,7 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: dev ? '' : `/${repoName}`
-		  },
-		  prerender: {
-			default: true
-		  }
+		},
 	}
 };
 

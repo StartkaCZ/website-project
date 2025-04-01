@@ -3,12 +3,13 @@
     import { catalogue } from '$lib/catalogue.js';
     // SvelteKit's navigation utility for client-side routing
     import { goto } from '$app/navigation';
+    import { base } from '$app/paths';
 
     /** Function to navigate to the item's detail page
 	 * @param {string} id
 	 */
     function viewItem(id) {
-        goto(`/catalogue/${id}`);
+        goto(`{base}/catalogue/${id}`);
     }
 </script>
 

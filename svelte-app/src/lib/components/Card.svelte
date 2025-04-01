@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     // Props allow customisation of card title and description
     export let title = "Card Title";
     export let description = "This is a brief description of the card.";
@@ -9,7 +10,7 @@
 <!-- Card container -->
 <div class="card">
     <!-- Placeholder image -->
-    <img src="/placeholder.jpg" alt="Placeholder">
+    <img src="{base}/placeholder.jpg" alt="Placeholder">
     
     <!-- Card content -->
     <div class="content">

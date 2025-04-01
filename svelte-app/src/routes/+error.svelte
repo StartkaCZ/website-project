@@ -2,6 +2,7 @@
     export let error;
     export let status;
     import { page } from '$app/state';
+    import { base } from '$app/paths';
 </script>
 
 
@@ -18,7 +19,7 @@
         <p class="message">An unknown error occurred.</p>
     {/if}
 
-    <a class="home-button" href="/">← Go back home</a>
+    <a class="home-button" href="{base}/">← Go back home</a>
 </div>
   
 

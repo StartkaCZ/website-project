@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import { onMount } from 'svelte';
 
     onMount(() => {
@@ -10,7 +11,7 @@
 <h1>About Us</h1>
 <!-- About Section with Named Grid Areas -->
 <div class="about-container">
-    <img src="/about-image.jpg" alt="About us" class="about-image">
+    <img src="{base}/about-image.jpg" alt="About us" class="about-image">
     <div class="about-text">
         <h2>Who We Are</h2>
         <p>We are a team passionate about web development and modern UI design.</p>

@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     // import Navigation.svelte from lib folder
     import { Navigation } from "$lib"
 </script>
@@ -7,7 +8,7 @@
 <header>
     <!-- Logo -->
     <div class="logo">
-        <img src="/logo.png" alt="Website Logo">
+        <img src="{base}/logo.png" alt="Website Logo">
         <h1>My Svelte App</h1>
     </div>
 

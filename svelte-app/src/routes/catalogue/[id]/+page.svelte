@@ -3,6 +3,7 @@
     export let data;
 
     // Bring in the navigation helper
+    import { base } from '$app/paths';
     import { goto } from '$app/navigation';
 
     // Destructure item from the loaded data
@@ -11,7 +12,7 @@
 
 
 <!-- Back button -->
-<button on:click={() => goto('/catalogue')}>← Back to Catalogue</button>
+<button on:click={() => goto('{base}/catalogue')}>← Back to Catalogue</button>
 
 <!-- Display item details -->
 <h1>{item.title}</h1>
