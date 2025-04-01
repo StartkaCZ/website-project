@@ -9,7 +9,7 @@
 	 * @param {string} id
 	 */
     function viewItem(id) {
-        goto(`{base}/catalogue/${id}`);
+        goto(`${base}/catalogue/${id}`);
     }
 </script>
 

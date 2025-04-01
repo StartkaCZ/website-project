@@ -12,7 +12,7 @@
 
 
 <!-- Back button -->
-<button on:click={() => goto('{base}/catalogue')}>← Back to Catalogue</button>
+<button on:click={() => goto(`${base}/catalogue`)}>← Back to Catalogue</button>
 
 <!-- Display item details -->
 <h1>{item.title}</h1>
