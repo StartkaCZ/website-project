@@ -1,0 +1,97 @@
+/* ==============================
+   Global Styles with CSS Variables
+   ============================== */
+
+   :root {
+    /* Color Variables */
+    --primary-color: #007bff;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --link-hover-color: #0056b3;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.02);
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    /* Font Variables */
+    --font-family: 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+
+    /* Spacing Variables */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+    --max-width: 1200px;
+}
+
+/* ==============================
+   Global Reset - Ensures consistency across browsers
+   ============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Base Styles
+   ============================== */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: var(--line-height-base);
+}
+
+/* ==============================
+   Headings
+   ============================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: var(--spacing-small);
+}
+
+/* ==============================
+   Paragraphs
+   ============================== */
+p {
+    margin-bottom: var(--spacing-small);
+}
+
+/* ==============================
+   Links
+   ============================== */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
+}
+
+/* ==============================
+   Container - Layout Wrapping
+   ============================== */
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
+
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+    --background-color: #333;
+    --text-color: #f8f9fa;
+
+    --shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.02);
+    --shadow-md: 0 2px 8px rgba(255, 255, 255, 0.04);
+    --shadow-lg: 0 4px 16px rgba(255, 255, 255, 0.08);
+    }
+}
